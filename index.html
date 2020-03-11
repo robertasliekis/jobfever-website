@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>JobFever</title>
+  </head>
+  <body>
+    <!-- Header start -->
+    <div class="header background-styling">
+      <div class="header-background">
+        <div class="background-container">
+          <img src="/images/background01.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- Navigation bar start -->
+
+      <div class="navbar">
+        <div class="navbar-control">
+          <div class="website-logo">
+            <a href="#">JOB<span class="text-colored">FEVER</span></a>
+          </div>
+
+          <div class="burger-icon">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+
+        <div class="navbar-categories">
+          <a href="#" class="navbar-category">How it Works</a>
+          <a href="#" class="navbar-category">Browse Jobs</a>
+          <a href="#" class="navbar-category">Employers</a>
+          <a href="#" class="navbar-category">Candidates</a>
+          <a href="#" class="navbar-category">News</a>
+        </div>
+        <!-- Account menu start -->
+        <div class="menu-account">
+          <div class="control-account">
+            <div class="button-account">
+              <div class="icon-account">
+                <i class="far fa-user-circle"></i>
+              </div>
+              ACCOUNT
+            </div>
+            <div class="button-signup">SIGN UP</div>
+          </div>
+          <div class="contact-info">
+            <div class="call-us">
+              <i class="fas fa-mobile-alt icon-phone"></i> CALL US
+            </div>
+            <div class="phone-number">
+              <i class="fas fa-mobile-alt icon-phone"></i> 8 800 567 890 00
+            </div>
+            <div class="work-time">Mon-Fri 9am-6pm</div>
+          </div>
+        </div>
+        <!-- Account menu end -->
+      </div>
+
+      <!-- Navigation bar end -->
+
+      <!-- Sidebart start -->
+      <div class="sidebar">
+        <div class="languages-bar">
+          <div class="language-icons">
+            <img
+              src="/images/icon01.jpg"
+              alt=""
+              class="language-icon icon-active"
+            />
+            <img src="/images/icon02.jpg" alt="" class="language-icon" />
+            <img src="/images/icon03.jpg" alt="" class="language-icon" />
+            <img src="/images/icon04.jpg" alt="" class="language-icon" />
+          </div>
+          <div class="arrow-icon"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <div class="social-media">
+          <div class="social-media-icons">
+            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            <div class="icon"><i class="fab fa-instagram"></i></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="icon"><i class="fab fa-google"></i></div>
+            <div class="icon"><i class="fab fa-linkedin"></i></div>
+          </div>
+          <div class="social-media-text"><p>Follow Us</p></div>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+    </div>
+    <!-- Header end -->
+
+    <!-- Main section start -->
+
+    <!-- Welcome section start -->
+    <div class="welcome-senction background-styling">
+      <div class="container">
+        <!-- Job board start -->
+        <div class="job-board">
+          <h1>Job Board <br />Special for you</h1>
+          <h2>
+            We have 43218 great job <br />
+            offers you deserve!
+          </h2>
+          <div class="job-board-help">
+            <div class="button-how-it-works">How it Works</div>
+            <div class="browse">
+              <div class="text">Browse</div>
+              <i class="fas fa-chevron-right icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Job board end -->
+
+    <!-- Search bar start -->
+    <div class="search-bar-section background-styling">
+      <div class="container">
+        <div class="search-bar">
+          <div class="search-bar-top">
+            <div class="search-categories">
+              <div
+                class="search-job"
+                id="btn-search-job"
+                onclick="switchJobSearch()"
+              >
+                FIND A JOB
+              </div>
+              <div
+                class="search-candidate"
+                id="btn-search-candidate"
+                onclick="switchJobSearch()"
+              >
+                FIND A CANDIDATE
+              </div>
+            </div>
+            <div class="suggestions">
+              We have 43218 job offers for you! Browse job offers by
+              <span class="category">Category</span>
+            </div>
+          </div>
+          <div class="search-settings-box">
+            <div class="search-settings">
+              <div class="search-input">
+                <div class="input-keywords">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Keywords"
+                    class="text-field"
+                  />
+                </div>
+                <div class="input-specialization">
+                  All specializations<i class="fas fa-chevron-down icon"></i>
+                  <ul class="specialization-list">
+                    <li class="specialization">Doctor</li>
+                    <li class="specialization">Copywritter</li>
+                    <li class="specialization">Mechanic</li>
+                    <li class="specialization">Designer</li>
+                    <li class="specialization">Server</li>
+                    <li class="specialization">Web Developer</li>
+                  </ul>
+                </div>
+                <div class="input-location">
+                  All Locations<i class="fas fa-map-marker-alt"></i>
+                  <ul class="location-list">
+                    <li class="location">Berlin</li>
+                    <li class="location">Rome</li>
+                    <li class="location">New York</li>
+                    <li class="location">Los Angeles</li>
+                    <li class="location">Tokyo</li>
+                    <li class="location">Sydney</li>
+                  </ul>
+                </div>
+                <div class="search-button">SEARCH</div>
+              </div>
+              <div class="search-sidenotes">
+                <div class="search-keywords-sidenote">
+                  * Search keywords e.g. web design
+                </div>
+                <div class="search-specialization-sidenote">
+                  * Filter by specialization e.g. developer, designer
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Search bar end -->
+
+        <!-- Browse categories header start -->
+        <div class="category-browsing-header">
+          <h1>Browse Jobs by Specialization</h1>
+          <p>
+            Find the best suiting jobs for your specialization!
+          </p>
+        </div>
+        <!-- Browse categories header end -->
+      </div>
+    </div>
+    <!-- Welcome section end -->
+
+    <!-- Job categories start -->
+    <div class="job-categories-section background-styling">
+      <div class="container">
+        <div class="job-categories">
+          <div class="job-category category1">
+            <i class="fas fa-stethoscope icon"></i>
+            <i class="fas fa-stethoscope icon-hover"></i>
+            <h4>Healthcare</h4>
+            <p>211 open positions</p>
+          </div>
+          <div class="job-category category2">
+            <i class="fas fa-chart-line icon"></i>
+            <i class="fas fa-chart-line icon-hover"></i>
+            <h4>Finance</h4>
+            <p>405 open positions</p>
+          </div>
+          <div class="job-category category3">
+            <i class="fas fa-laptop-code icon"></i>
+            <i class="fas fa-laptop-code icon-hover"></i>
+            <h4>IT</h4>
+            <p>553 open positions</p>
+          </div>
+          <div class="job-category category4">
+            <i class="fas fa-car icon"></i>
+            <i class="fas fa-car icon-hover"></i>
+            <h4>Automotive</h4>
+            <p>329 open positions</p>
+          </div>
+          <div class="job-category category5">
+            <i class="far fa-building icon"></i>
+            <i class="far fa-building icon-hover"></i>
+            <h4>Construction</h4>
+            <p>487 open positions</p>
+          </div>
+          <div class="job-category category6">
+            <i class="fas fa-home icon"></i>
+            <i class="fas fa-home icon-hover"></i>
+            <h4>Real Estate</h4>
+            <p>197 open positions</p>
+          </div>
+          <div class="job-category category7">
+            <i class="fas fa-utensils icon"></i>
+            <i class="fas fa-utensils icon-hover"></i>
+            <h4>Hospitality</h4>
+            <p>512 open positions</p>
+          </div>
+          <div class="job-category category8">
+            <i class="far fa-handshake icon"></i>
+            <i class="far fa-handshake icon-hover"></i>
+            <h4>Sales & Marketing</h4>
+            <p>287 open positions</p>
+          </div>
+        </div>
+        <div class="button-browse">Browse All Categories</div>
+      </div>
+    </div>
+    <!-- Job categories end -->
+
+    <!-- Job offer start -->
+    <div class="job-offers-section background-styling">
+      <div class="container">
+        <div class="top-section">
+          <div
+            class="top-left-section top-both-sections"
+            id="top-left-section"
+            onclick="switchJobOffers()"
+          >
+            <div class="text">
+              <div class="divider divider-top">
+                <h2>Looking for a Job</h2>
+                <p>
+                  Check out all these open job positions!
+                </p>
+              </div>
+              <div class="divider divider-bottom">
+                <h4>69.368 Open positions</h4>
+              </div>
+            </div>
+            <img src="/images/guy02.png" alt="" />
+          </div>
+          <div
+            class="top-right-section top-both-sections"
+            id="top-right-section"
+            onclick="switchJobOffers()"
+          >
+            <div class="text">
+              <div class="divider divider-top">
+                <h2>Hire an Employee</h2>
+                <p>
+                  Check out all these employees looking for a job!
+                </p>
+              </div>
+              <div class="divider divider-bottom">
+                <h4>238.900 Candidates</h4>
+              </div>
+            </div>
+            <img src="/images/guy01.png" alt="" />
+          </div>
+        </div>
+        <div class="sign-up-employee">
+          <a href="#"><i class="fas fa-pen icon"></i>Sign Up as an employee</a>
+        </div>
+        <div class="advertisements-list">
+          <div class="triangle-top"></div>
+          <div class="advertisement advertisement-corner">
+            <div class="triangle-corner">
+              <i class="fas fa-bolt bolt-icon"></i>
+            </div>
+            <div class="flex-top flex">
+              <div class="job-title">
+                <h2>Data Center Support Specialist Engineer</h2>
+                <div class="button button-blue">Part Time</div>
+              </div>
+              <img
+                src="/images/logo-company01.png"
+                alt=""
+                class="logo-company"
+              />
+            </div>
+            <div class="flex-bottom flex">
+              <div class="advertisement-stats">
+                <div class="advertisement-category">IT Contractor</div>
+                <div class="time-posted">1 hours ago</div>
+                <div class="location">London, United Kingdom</div>
+              </div>
+              <div class="wishlist-button">
+                <i class="far fa-heart"></i> Add to Wishlist
+              </div>
+            </div>
+          </div>
+          <div class="advertisement">
+            <div class="flex-top flex">
+              <div class="job-title">
+                <h2>3D Modeler, 3DS Max, Zbrush</h2>
+                <div class="button button-green">FULL TIME</div>
+              </div>
+              <img
+                src="/images/logo-company02.png"
+                alt=""
+                class="logo-company"
+              />
+            </div>
+            <div class="flex-bottom flex">
+              <div class="advertisement-stats">
+                <div class="advertisement-category">Digital & Creative</div>
+                <div class="time-posted">4 hours ago</div>
+                <div class="location">Berlin, Germany</div>
+              </div>
+              <div class="wishlist-button">
+                <i class="far fa-heart"></i> Add to Wishlist
+              </div>
+            </div>
+          </div>
+          <div class="advertisement">
+            <div class="triangle-corner">
+              <i class="fas fa-bolt bolt-icon"></i>
+            </div>
+            <div class="flex-top flex">
+              <div class="job-title">
+                <h2>Front End and Back End Developer</h2>
+                <div class="button button-orange">INTERNSHIP</div>
+              </div>
+              <img
+                src="/images/logo-company03.png"
+                alt=""
+                class="logo-company"
+              />
+            </div>
+            <div class="flex-bottom flex">
+              <div class="advertisement-stats">
+                <div class="advertisement-category">
+                  Web, Mobile & Software Dev
+                </div>
+                <div class="time-posted">6 hours ago</div>
+                <div class="location">Warsaw, Poland</div>
+              </div>
+              <div class="wishlist-button">
+                <i class="far fa-heart"></i> Add to Wishlist
+              </div>
+            </div>
+          </div>
+          <div class="advertisement">
+            <div class="flex-top flex">
+              <div class="job-title">
+                <h2>Copywriter for Commercial Advertising</h2>
+                <div class="button button-cyan">FREELANCE</div>
+              </div>
+              <img
+                src="/images/logo-company04.png"
+                alt=""
+                class="logo-company"
+              />
+            </div>
+            <div class="flex-bottom flex">
+              <div class="advertisement-stats">
+                <div class="advertisement-category">
+                  Writing
+                </div>
+                <div class="time-posted">8 hours ago</div>
+                <div class="location">Cologne, Germany</div>
+              </div>
+              <div class="wishlist-button">
+                <i class="far fa-heart"></i> Add to Wishlist
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Job listings and email start -->
+        <div class="job-listings-email">
+          <div class="load-more-listings">
+            <a href="#"
+              >Load More Listings <i class="fas fa-chevron-right icon"></i
+            ></a>
+          </div>
+          <a href="#" class="email-me">@ Email Me Jobs Like These</a>
+        </div>
+        <!-- Job listings and email end -->
+
+        <!-- Download mobile application start -->
+        <div class="bottom-mobile">
+          <div class="mobile-phone width50">
+            <div class="website-logo">
+              <a href="#">JOB<span class="text-colored">FEVER</span></a>
+            </div>
+            <img src="/images/phone01.png" alt="" class="phone-image" />
+          </div>
+          <div class="download-app width50">
+            <div class="text">
+              <h2>Get JobFever App for your phone</h2>
+              <p>
+                In a single search, JobFever offers free access to millions of
+                jobs from thousands of company websites and job boards.
+              </p>
+            </div>
+            <div class="app-store-buttons">
+              <div class="app-store app-store-button">
+                <a href="#"><img src="/images/app02.jpg" alt=""/></a>
+              </div>
+              <div class="google-play app-store-button">
+                <a href="#"><img src="/images/app01.jpg" alt=""/></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Download mobile application end -->
+      </div>
+    </div>
+    <!-- Job offers end -->
+
+    <!-- Testimonial start -->
+    <div class="testimonials-section background-styling">
+      <div class="container">
+        <div class="text-candidates">
+          <h1>A Few Words from Happy Candidates</h1>
+          <p>Check out these happy testimonials from our clients!</p>
+        </div>
+
+        <div class="testimonial-carousel">
+          <div class="testimonials">
+            <div class="testimonial">
+              <div class="author-image">
+                <img src="/images/person01.jpg" alt="" />
+              </div>
+              <div class="testimonial-text">
+                <div class="top-text">
+                  <p>
+                    I want to thank JobFever for not only helping me get a great
+                    job but a career!
+                  </p>
+                </div>
+                <div class="bottom-text">
+                  <div class="testimonial-author">
+                    <h4>John Fisher</h4>
+                    <p class="profession">App Developer</p>
+                  </div>
+                  <div class="quotation-mark">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="author-image">
+                <img src="/images/person02.jpg" alt="" />
+              </div>
+              <div class="testimonial-text">
+                <div class="top-text">
+                  <p>
+                    JobFever is great! The easily navigated website makes your
+                    entire job search feel and look very professional.
+                  </p>
+                </div>
+                <div class="bottom-text">
+                  <div class="testimonial-author">
+                    <h4>Jennifer Robson</h4>
+                    <p class="profession">Copywriter</p>
+                  </div>
+                  <div class="quotation-mark">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="author-image">
+                <img src="/images/person03.jpg" alt="" />
+              </div>
+              <div class="testimonial-text">
+                <div class="top-text">
+                  <p>
+                    Great platform from both a job seeker and employer
+                    perspective. Site is easy to use and the support has been
+                    great!
+                  </p>
+                </div>
+                <div class="bottom-text">
+                  <div class="testimonial-author">
+                    <h4>Patrick Ashley</h4>
+                    <p class="profession">UI/UX Graphic Designer</p>
+                  </div>
+                  <div class="quotation-mark">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-slider">
+            <div class="dot dot1"></div>
+            <div class="dot dot2"></div>
+            <div class="dot dot3"></div>
+            <div class="dot dot4"></div>
+            <div class="dot dot3"></div>
+            <div class="dot dot2"></div>
+            <div class="dot dot1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="get-started-section">
+      <div class="get-started-content">
+        <div class="get-started-text">
+          <h2>Let's Get Started With JobFever Right Now!</h2>
+        </div>
+        <a href="#" class="sign-up-button"
+          ><i class="fas fa-user user-icon"></i> SIGN UP</a
+        >
+      </div>
+    </div>
+    <!-- Testimonial end -->
+
+    <!-- Blog section start -->
+    <div class="blog-section background-styling">
+      <div class="container">
+        <div class="blog-top-section-text">
+          <h1>Most Recent Blog Posts</h1>
+          <p>Read about latest news from all over the world</p>
+        </div>
+        <div class="blog-articles-carousel">
+          <div class="blog-articles">
+            <div class="blog-article">
+              <div class="blog-article-picture-area">
+                <img
+                  src="/images/article01.jpg"
+                  alt=""
+                  class="blog-article-picture"
+                />
+              </div>
+              <div class="blog-article-cathegory">Startup</div>
+              <div class="blog-article-text">
+                <h4 class="blog-article-name">
+                  Here’s how to convince people to join your company over the
+                  big tech giants
+                </h4>
+                <p class="blog-article-date">4 FEBRUARY, 2020</p>
+              </div>
+            </div>
+            <div class="blog-article">
+              <div class="blog-article-picture-area">
+                <img
+                  src="/images/article02.jpg"
+                  alt=""
+                  class="blog-article-picture"
+                />
+              </div>
+              <div class="blog-article-cathegory">News</div>
+              <div class="blog-article-text">
+                <h4 class="blog-article-name">
+                  11 Big Companies That Let You Work Remotely
+                </h4>
+                <p class="blog-article-date">5 FEBRUARY, 2020</p>
+              </div>
+            </div>
+            <div class="blog-article">
+              <div class="blog-article-picture-area">
+                <img
+                  src="/images/article03.jpg"
+                  alt=""
+                  class="blog-article-picture"
+                />
+              </div>
+              <div class="blog-article-cathegory">Job search</div>
+              <div class="blog-article-text">
+                <h4 class="blog-article-name">
+                  How To Follow Up After an Interview (With Templates)
+                </h4>
+                <p class="blog-article-date">7 FEBRUARY, 2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-buttons">
+            <div class="scroll-button-left scroll-button">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="scroll-button-right scroll-button">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="all-news-button">ALL NEWS</a>
+      </div>
+    </div>
+    <!-- Blog section end-->
+
+    <!-- Footer start -->
+    <div class="footer background-styling">
+      <div class="go-to-top-container">
+        <a href="#" class="go-to-top-button"
+          >Go to top <i class="fas fa-arrow-down go-to-top-icon"></i
+        ></a>
+      </div>
+
+      <div class="background-shape"></div>
+      <div class="container">
+        <!-- Footer top -->
+        <div class="footer-top">
+          <div class="website-logo">
+            <a href="#">JOB<span class="text-colored">FEVER</span></a>
+          </div>
+          <div class="contact-info">
+            <div class="phone-number">
+              <div class="icon-phone"><i class="fas fa-mobile-alt"></i></div>
+              8 800 567 890 00
+            </div>
+            <div class="email">
+              <span class="eta-symbol">@</span> support@companyname.com
+            </div>
+          </div>
+
+          <div class="social-media-icons">
+            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-google"></i></a>
+            <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="languages-bar">
+            <div class="language-icons">
+              <img
+                src="/images/icon01.jpg"
+                alt=""
+                class="language-icon icon-active"
+              />
+              <img src="/images/icon02.jpg" alt="" class="language-icon" />
+              <img src="/images/icon03.jpg" alt="" class="language-icon" />
+              <img src="/images/icon04.jpg" alt="" class="language-icon" />
+            </div>
+            <div class="arrow-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+        </div>
+        <!-- Footer top end -->
+
+        <!-- Footer middle start-->
+        <div class="footer-middle">
+          <div class="column about-us">
+            <p class="about-us-text">
+              JobFever is an excellent tool in finding employee or employer
+              anywhere in the world!
+            </p>
+            <a href="" class="read-more-button"
+              >Read More
+              <i class="fas fa-chevron-right read-more-button-icon"></i
+            ></a>
+          </div>
+
+          <div class="column for-candidates">
+            <h4 class="footer-headers">For Candidates</h4>
+            <ul class="list">
+              <li class="list-item">Browse Jobs</li>
+              <li class="list-item">Browse Companies</li>
+              <li class="list-item">Categories</li>
+              <li class="list-item">Submit Resume</li>
+              <li class="list-item">Dashboard</li>
+            </ul>
+          </div>
+
+          <div class="column for-employers">
+            <h4 class="footer-headers">For Employers</h4>
+            <ul class="list">
+              <li class="list-item">Browse Cadidates</li>
+              <li class="list-item">Post a Job</li>
+              <li class="list-item">Dashboard</li>
+            </ul>
+          </div>
+
+          <div class="column newsletter">
+            <h4 class="footer-headers">Sign Up for Weekly Newsletter</h4>
+            <p>Join our newsletter to get special events, info and news!</p>
+            <div class="email-submit">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="  Email Address"
+                class="email-submit-text"
+              />
+              <div class="email-submit-button">
+                <i class="far fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer middle end-->
+
+        <!-- Footer bottom start -->
+        <div class="footer-bottom">
+          <div class="navbar-categories">
+            <a href="#" class="navbar-category">How it Works</a>
+            <a href="#" class="navbar-category">Browse Jobs</a>
+            <a href="#" class="navbar-category">Employers</a>
+            <a href="#" class="navbar-category">Candidates</a>
+            <a href="#" class="navbar-category">News</a>
+          </div>
+          <div class="copyright-section">
+            Copyright &copy; 2020 by
+            <span class="color-text">JobFever </span>
+          </div>
+        </div>
+        <!-- Footer bottom end -->
+      </div>
+    </div>
+    <!-- Footer end -->
+    <!-- Main section end -->
+    <!-- Script Source -->
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    <script src="/page-scripts.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
