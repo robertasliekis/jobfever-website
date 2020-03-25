@@ -60,6 +60,7 @@ a {
 
 p {
   color: var(--color-grey);
+  pointer-events: none;
 }
 
 ul {
@@ -446,6 +447,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--color-grey);
+  cursor: default;
 }
 
 /* Siderbar end */
@@ -475,6 +477,7 @@ ul {
   line-height: 4.6rem;
   font-weight: 900;
   letter-spacing: 0.2rem;
+  pointer-events: none;
 }
 
 .job-board h2 {
@@ -996,7 +999,7 @@ p {
 }
 
 .job-categories-section .job-categories .job-category .icon-hover {
-  font-size: 10vw;
+  font-size: 9vw;
   position: absolute;
   opacity: 0.04;
   z-index: 0;
@@ -2465,7 +2468,7 @@ img {
     color: black;
   }
   .job-categories-section .job-categories .job-category .icon-hover {
-    font-size: 14vw;
+    font-size: 12vw;
   }
   .job-offers-section .advertisements-list .advertisement .button {
     margin-left: 1rem;
@@ -2577,17 +2580,17 @@ img {
     top: 4rem;
     left: 0rem;
     width: 9rem;
-    border-radius: 0 0 1rem 1rem;
     border-radius: 0.7rem;
-    height: 20rem;
-    opacity: 0;
+    height: 15rem;
     overflow: hidden;
+    display: none;
+    background-color: red;
   }
   .header .navbar .navbar-categories .navbar-category {
-    padding: 1rem 0rem;
     background-color: #252525;
     color: var(--color-light-orange);
     width: 100%;
+    height: 3rem;
   }
   .header .navbar .navbar-categories .navbar-category:hover {
     border: none;
@@ -3249,6 +3252,7 @@ h2 {
 
 .nav-active {
   opacity: 1 !important;
+  display: block !important;
 }
 
 .toggle .line1 {
