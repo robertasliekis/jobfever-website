@@ -1,45 +1,29 @@
-const slider = document.querySelector(".blog-articles");
+const navSlide = () => {
+  const burger = document.querySelector(".burger-icon");
+  const nav = document.querySelector(".navbar-categories");
 
-const leftArrow = document.querySelector(".scroll-button-left");
-const rightArrow = document.querySelector(".scroll-button-right");
-
-var sectionIndex = 0;
-
-rightArrow.addEventListener("click", function() {
-  //sectionIndex = sectionIndex + 1;
-  slider.style.transform = "translate(-25%)";
-
-  //slider.style.transform = 'translate(' +(sectionIndex)* -25 + '%)';
-});
-
-const left = document.querySelector(".left");
-const right = document.querySelector(".right");
-
-const slider = document.querySelector(".slider");
-
-const indicatorParent = document.querySelector(".control ul");
-const indicators = document.querySelectorAll(".control li");
-index = 0;
-
-indicators.forEach((indicator, i) => {
-  indicator.addEventListener("click", () => {
-    document.querySelector(".control .selected").classList.remove("selected");
-    indicator.classList.add("selected");
-    slider.style.transform = "translateX(" + i * -25 + "%)";
-    index = i;
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
+    burger.classList.toggle("burger-active");
+    burger.classList.toggle("toggle");
   });
-});
+};
 
-left.addEventListener("click", function() {
-  index = index > 0 ? index - 1 : 0;
-  document.querySelector(".control .selected").classList.remove("selected");
-  indicatorParent.children[index].classList.add("selected");
-  slider.style.transform = "translateX(" + index * -25 + "%)";
-});
+navSlide();
 
-right.addEventListener("click", function() {
-  index = index < 4 - 1 ? index + 1 : 3;
-  document.querySelector(".control .selected").classList.remove("selected");
-  indicatorParent.children[index].classList.add("selected");
-  slider.style.transform = "translateX(" + index * -25 + "%)";
-});
+function switchJobSearch() {
+  document
+    .getElementById("btn-search-candidate")
+    .classList.toggle("search-right-active");
+  document
+    .getElementById("btn-search-job")
+    .classList.toggle("search-left-active");
+}
+function switchJobOffers() {
+  document
+    .getElementById("top-left-section")
+    .classList.toggle("offers-right-active");
+  document
+    .getElementById("top-right-section")
+    .classList.toggle("offers-left-active");
+}
