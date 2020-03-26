@@ -462,8 +462,8 @@ ul {
 }
 
 .search-bar .search-settings-box .search-settings .search-input {
-  display: flex;
-  justify-content: space-between;
+  @include flexCenter();
+  align-items: flex-start;
 }
 
 .search-bar
@@ -472,22 +472,23 @@ ul {
   .search-input
   .input-keywords {
   width: 25%;
-  padding-left: 1rem;
-  box-shadow: 0px 0px 18px 9px rgba(0, 0, 0, 0.03);
   margin-right: 0.2rem;
-}
-
-.search-bar
-  .search-settings-box
-  .search-settings
-  .search-input
-  .input-keywords
   .text-field {
-  @include flexCenter();
-  height: 3rem;
-  width: 100%;
-  color: black;
-  border: none;
+    @include flexCenter();
+    height: 3rem;
+    width: 100%;
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 18px 9px rgba(0, 0, 0, 0.05);
+  }
+  .text-field-label {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: var(--color-grey);
+    font-size: 0.6rem;
+    margin-top: 1rem;
+  }
 }
 
 .search-bar
@@ -512,7 +513,25 @@ ul {
   .search-settings-box
   .search-settings
   .search-input
+  .input-specialization-section {
+  @include flexCenter();
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  .search-specialization-sidenote {
+    @include flexCenter();
+    color: var(--color-grey);
+    font-size: 0.6rem;
+    margin-top: 1rem;
+  }
+}
+
+.search-bar
+  .search-settings-box
+  .search-settings
+  .search-input
   .input-specialization {
+  width: 99%;
   position: relative;
   .specialization-list {
     position: absolute;
@@ -594,34 +613,6 @@ ul {
   border-radius: 0 0.5rem 0.5rem 0;
   color: white;
   cursor: pointer;
-}
-
-.search-bar .search-settings-box .search-settings .search-sidenotes {
-  display: flex;
-  align-items: center;
-  color: var(--color-grey);
-  font-size: 0.6rem;
-}
-
-.search-bar
-  .search-settings-box
-  .search-settings
-  .search-sidenotes
-  .search-keywords-sidenote,
-.search-specialization-sidenote {
-  width: 20%;
-  margin-right: 0.1rem;
-  display: flex;
-  align-items: flex-end;
-  margin-top: 1rem;
-}
-
-.search-bar
-  .search-settings-box
-  .search-settings
-  .search-sidenotes
-  .search-specialization-sidenote {
-  width: 30%;
 }
 
 .category-browsing-header {
