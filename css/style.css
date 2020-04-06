@@ -2687,20 +2687,25 @@ img {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .search-bar
-.search-settings-box
-.search-settings
-.search-input
-.input-keywords {
+  .search-bar .search-settings-box .search-settings .search-input .input-keywords {
     width: 100%;
     margin: 0;
   }
-  .search-bar
-.search-settings-box
-.search-settings
-.search-input
-.input-specialization,
-  .input-location {
+  .search-bar .search-settings-box .search-settings .search-input .input-keywords .text-field-label {
+    display: none;
+  }
+  .search-bar .search-settings-box .search-settings .search-input .input-specialization-section {
+    margin: 0;
+    margin-top: 0.2rem;
+    width: 100%;
+  }
+  .search-bar .search-settings-box .search-settings .search-input .input-specialization-section .input-specialization {
+    width: 100%;
+  }
+  .search-bar .search-settings-box .search-settings .search-input .input-specialization-section .search-specialization-sidenote {
+    display: none;
+  }
+  .search-bar .search-settings-box .search-settings .search-input .input-location {
     width: 100%;
     margin: 0;
     margin-top: 0.2rem;
