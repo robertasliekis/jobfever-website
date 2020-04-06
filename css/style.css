@@ -3044,6 +3044,9 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .header .navbar .menu-account .control-account .button-account {
+    display: none;
+  }
   .sidebar .social-media {
     display: none;
   }
