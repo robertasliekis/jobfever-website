@@ -1390,7 +1390,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .job-offers-section .advertisements-list .advertisement .flex-bottom .advertisement-stats {
@@ -3098,7 +3098,7 @@ img {
     height: 80%;
   }
   .job-offers-section .advertisements-list .advertisement {
-    padding: 1.5rem 1.3rem;
+    padding: 2rem 1.3rem;
   }
   .job-offers-section .advertisements-list .advertisement .triangle-corner {
     border-top: 40px solid var(--color-light-orange);
