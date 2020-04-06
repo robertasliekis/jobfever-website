@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
   --color-grey: grey;
   --color-light-grey: rgb(231, 231, 231);
   --color-dark-orange: rgb(235, 127, 3);
@@ -18,8 +17,10 @@
   --hover-shadow: 0px 0px 50px 15px rgba(204, 129, 0, 0.2);
 }
 
+html,
 body {
   overflow-x: hidden;
+  font-family: "Roboto", Helvetica, sans-serif;
 }
 
 .background-styling {
@@ -483,7 +484,7 @@ ul {
 .job-board h2 {
   color: black;
   font-size: 2rem;
-  margin: 2.5rem 0;
+  margin: 3rem 0;
 }
 
 .job-board .job-board-help {
@@ -541,7 +542,7 @@ ul {
 }
 
 .search-bar {
-  margin-top: 12rem;
+  margin-top: 15rem;
   width: 100%;
 }
 
@@ -669,6 +670,8 @@ ul {
   border: none;
   -webkit-box-shadow: 0px 0px 18px 9px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 18px 9px rgba(0, 0, 0, 0.05);
+  padding-left: 1rem;
+  font-size: 1.2rem;
 }
 
 .search-bar
@@ -2578,7 +2581,7 @@ img {
             justify-content: flex-start;
   }
   .navbar-control .burger-icon {
-    margin-left: 0.2rem;
+    margin-left: 0.5rem;
     display: block;
     cursor: pointer;
   }
@@ -2672,7 +2675,7 @@ img {
     font-size: 1.5rem;
   }
   .search-bar {
-    margin-top: 11rem;
+    margin-top: 12rem;
   }
   .search-bar .search-settings-box .search-settings {
     width: 95%;
@@ -2798,6 +2801,13 @@ img {
   .job-offers-section .sign-up-employee {
     margin-top: 12rem;
   }
+  .job-offers-section
+.advertisements-list
+.advertisement
+.flex-top
+.logo-company {
+    width: 20%;
+  }
   .testimonials-section .testimonial-carousel .testimonials {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2918,9 +2928,6 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .search-bar {
-    margin-top: 11rem;
-  }
   .search-bar .search-bar-top .suggestions {
     display: none;
   }
@@ -2966,7 +2973,7 @@ img {
             align-items: center;
   }
   .get-started-section .get-started-content {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
   }
   .get-started-section .get-started-content .sign-up-button {
     margin-left: 0;
@@ -3021,6 +3028,9 @@ img {
 }
 
 @media only screen and (max-width: 414px) {
+  .header .background-container {
+    height: 700px;
+  }
   .header .header-background img {
     -webkit-transform: translate(-35%, -50%);
             transform: translate(-35%, -50%);
@@ -3034,17 +3044,29 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .sidebar .social-media {
+    display: none;
+  }
   .job-board {
     margin-top: 4rem;
+  }
+  .job-board h1 {
+    font-size: 2.7rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+  }
+  .job-board h2 {
+    font-size: 1.7rem;
+    margin-top: 1rem;
   }
   .job-board .job-board-help .button-how-it-works {
     padding: 0.9rem 1.5rem;
   }
-  .search-bar {
-    margin-top: 5rem;
-  }
-  .search-bar .search-bar-top {
+  .job-board .search-bar .search-bar-top {
     width: 100%;
+  }
+  .search-bar {
+    margin-top: 10rem;
   }
   .search-bar .search-bar-top .search-categories {
     width: 100%;
@@ -3055,7 +3077,7 @@ img {
     margin-right: 0.2rem;
   }
   .category-browsing-header {
-    margin: 1.5rem 0;
+    margin: 3rem 0;
   }
   .category-browsing-header h1 {
     width: 90%;
@@ -3076,7 +3098,7 @@ img {
     height: 80%;
   }
   .job-offers-section .advertisements-list .advertisement {
-    padding: 1rem 1.3rem;
+    padding: 1.5rem 1.3rem;
   }
   .job-offers-section .advertisements-list .advertisement .triangle-corner {
     border-top: 40px solid var(--color-light-orange);
@@ -3103,7 +3125,8 @@ h2 {
 .advertisement
 .flex-top
 .logo-company {
-    width: 50%;
+    width: 30%;
+    display: none;
   }
   .job-offers-section .sign-up-employee {
     margin-top: 15rem;
@@ -3145,12 +3168,6 @@ h2 {
   .job-offers-section .bottom-mobile .download-app p {
     display: none;
   }
-  .testimonials-section .text-candidates h1 {
-    text-align: center;
-  }
-  .testimonials-section .text-candidates p {
-    text-align: center;
-  }
   .job-offers-section
 .advertisements-list
 .advertisement
@@ -3186,24 +3203,29 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
   .job-offers-section .job-listings-email .load-more-listings {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .testimonials-section .text-candidates {
     margin-top: 3rem;
     margin-bottom: 2rem;
   }
+  .testimonials-section .text-candidates h1 {
+    text-align: center;
+  }
+  .testimonials-section .text-candidates p {
+    text-align: center;
+  }
   .testimonials-section .testimonial-carousel {
     margin-bottom: 2rem;
   }
   .testimonials-section .testimonial-carousel .testimonials .testimonial {
-    height: 10rem;
+    height: 13rem;
     width: 100%;
     padding: 0 1rem;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
   .testimonials-section .testimonial-carousel .carousel-slider {
     margin-top: 1rem;
@@ -3219,7 +3241,7 @@ h2 {
 .blog-articles
 .blog-article
 .blog-article-picture-area {
-    height: 10rem;
+    height: 14rem;
   }
   .blog-section .blog-articles-carousel .scroll-buttons {
     display: none;
@@ -3281,6 +3303,17 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .job-board h1 {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+  }
+  .job-board h2 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
   }
 }
 
