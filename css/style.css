@@ -400,6 +400,19 @@ ul {
   color: var(--color-grey);
 }
 
+.languages-bar:hover .language-icons {
+  border: 2px solid grey;
+  border-radius: 1.5rem;
+}
+
+.languages-bar:hover .language-icon {
+  display: block;
+}
+
+.languages-bar:hover .arrow-icon {
+  display: none;
+}
+
 .sidebar .social-media .social-media-icons .icon {
   margin: 0.5rem 0;
   cursor: pointer;
@@ -2253,16 +2266,6 @@ img {
   .menu-account .control-account .button-signup:hover {
     background-color: var(--color-dark-orange);
     color: black;
-  }
-  .languages-bar:hover .language-icons {
-    border: 2px solid grey;
-    border-radius: 1.5rem;
-  }
-  .languages-bar:hover .language-icon {
-    display: block;
-  }
-  .languages-bar:hover .arrow-icon {
-    display: none;
   }
   .job-board .job-board-help .button-how-it-works:hover {
     background-color: transparent;
