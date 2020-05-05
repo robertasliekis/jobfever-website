@@ -25,6 +25,7 @@ body {
 
 .background-styling {
   background-color: var(--color-background-sand);
+  background-color: #f1edea;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,18 +146,11 @@ ul {
 
 .header .background-container {
   position: relative;
-  height: 900px;
-}
-
-.header .header-background img {
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  width: 2000px;
+  width: 100%;
+  background-image: url(/images/background.webp);
   background-position: center;
-  background-position: left;
+  background-size: cover;
+  height: 57rem;
 }
 
 /* Navbar start */
@@ -2538,6 +2532,9 @@ h2 {
     border-bottom-left-radius: 0rem;
     width: 100%;
   }
+  .header .header-background .background-container {
+    height: 56rem;
+  }
   .header .navbar {
     position: relative;
     z-index: 3;
@@ -2640,6 +2637,9 @@ h2 {
 }
 
 @media only screen and (max-width: 800px) {
+  .header .header-background .background-container {
+    height: 57.5rem;
+  }
   .sidebar {
     height: 28rem;
   }
@@ -2877,10 +2877,6 @@ h2 {
   * {
     --global-margin-left-right: 1rem;
   }
-  .header .header-background img {
-    -webkit-transform: translate(-40%, -50%);
-            transform: translate(-40%, -50%);
-  }
   .header .navbar {
     width: calc(100% - 3rem);
     margin-left: 3rem;
@@ -3000,12 +2996,8 @@ h2 {
 }
 
 @media only screen and (max-width: 414px) {
-  .header .background-container {
-    height: 700px;
-  }
-  .header .header-background img {
-    -webkit-transform: translate(-35%, -50%);
-            transform: translate(-35%, -50%);
+  .header .header-background .background-container {
+    height: 43rem;
   }
   .header .navbar .menu-account {
     width: 40%;
@@ -3062,6 +3054,9 @@ h2 {
   }
   .job-categories-section .button-browse {
     width: 15rem;
+  }
+  .job-categories-section .job-categories .job-category {
+    width: 49.2%;
   }
   .job-categories-section .job-categories .job-category .icon-hover {
     font-size: 30vw;
@@ -3275,6 +3270,9 @@ h2 {
 }
 
 @media only screen and (max-width: 375px) {
+  .header .header-background .background-container {
+    height: 42rem;
+  }
   .job-board h1 {
     font-size: 2.3rem;
     line-height: 2.5rem;
@@ -3282,6 +3280,32 @@ h2 {
   .job-board h2 {
     font-size: 1.6rem;
     margin-top: 1rem;
+  }
+  .footer .footer-bottom {
+    height: auto;
+  }
+  .footer .footer-bottom .navbar-categories .navbar-category {
+    width: 35%;
+    height: 2rem;
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header .header-background .background-container {
+    height: 48rem;
+  }
+  .menu-account .control-account .button-signup {
+    width: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 2rem;
+  }
+  .job-board .job-board-help .button-how-it-works {
+    padding: 1rem 0.5rem;
+  }
+  .job-categories-section .job-categories .job-category {
+    width: 49%;
   }
 }
 
